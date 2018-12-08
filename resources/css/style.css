@@ -108,8 +108,37 @@ h2:after {
     margin-bottom: 10px;
 }
 
+.icon-small {
+    display: inline-block;
+    font-size: 120%;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    margin-right: 10px;  
+    
+    /* hacks for aligning icons and text */
+    line-height: 120%;
+    vertical-align: middle;  
+    margin-top: -5px;
+}
 
-/* ----- 2.d BUTTONS ----- */
+/* ----- 2.d LINKS ----- */
+
+a:link,
+a:visited  {
+    color:#e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: solid 1px #e67e22;
+}
+    a:hover,
+    a:active {
+        color: #555; 
+        border-bottom: 1px solid transparent;
+        transition: border-bottom 0.2s, color 0.2s;
+}
+
+/* ----- 2.E BUTTONS ----- */
 
 /* Play with psuedo classes :link and :visited */
 /* anchor tags are inline elements, which do not have padding nor margins. inline blocks have both but also do not create line breaks like block elements */
@@ -301,14 +330,31 @@ header {
 
 }
 
+.btn-app:link,
+.btn-app:visited {
+    border-bottom: 0;
+}
+
 .btn-app img {
     height: 50px;
     width: auto;
     margin-right: 10px;
 }
 
+/* ---------------------------------------------------- */
+/* 5. CITIES */
+/* ---------------------------------------------------- */
 
+.city-photo img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    
+}
 
+.city-feature{
+    margin-bottom: 5px;
+}
 
 
 
